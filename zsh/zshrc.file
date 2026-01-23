@@ -16,3 +16,9 @@ fpath+=$HOME/.zsh/pure
 
 autoload -U promptinit; promptinit
 prompt pure
+
+# Add lua-language-server to path
+export PATH="$PATH:$(pwd)/.local/bin/"
+
+# Aliasses
+alias lsa="ls -lsa"
