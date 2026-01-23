@@ -1,0 +1,7 @@
+[user]
+	email = marickmanrho@gmail.com
+	name = Marick
+
+[alias]
+	lga = log --graph --all --oneline
+	df = diff --name-only --cached
