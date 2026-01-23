@@ -16,6 +16,13 @@ select zsh_yn in "Yes" "No"; do
 	esac
 done
 
+echo "Install lua language server?"
+select lls_yn in "Yes" "No"; do
+	case $lls_yn in
+		Yes ) bash ./lua_ls/install_lua_ls.sh; break;;
+		No ) echo "Skipping"; break;;
+	esac
+done
 
 echo "Install NeoVim?"
 select nv_yn in "Yes" "No"; do
@@ -24,6 +31,3 @@ select nv_yn in "Yes" "No"; do
  		No ) echo "Skipping"; break;;
 	esac
 done
-
-echo "Updating .bashrc"
-exec "$BASH"
