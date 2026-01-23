@@ -1,5 +1,12 @@
 #!/bin/bash
 
+echo "Setup git"
+select git_yn in "Yes" "No"; do
+	case $git_yn in
+		Yes ) bash ./git/setup_git.sh; break;;
+		No ) echo "Skipping"; break;;
+	esac
+done
 
 echo "Install zsh?"
 select zsh_yn in "Yes" "No"; do
