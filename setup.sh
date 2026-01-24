@@ -27,7 +27,7 @@ done
 echo "Install NeoVim?"
 select nv_yn in "Yes" "No"; do
  	case $nv_yn in
- 		Yes ) bash ./install_scripts/install_nvim.sh; break;;
+ 		Yes ) bash ./nvim/install_nvim.sh; break;;
  		No ) echo "Skipping"; break;;
 	esac
 done

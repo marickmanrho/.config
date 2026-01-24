@@ -22,3 +22,9 @@ export PATH="$PATH:$(pwd)/.local/bin/"
 
 # Aliasses
 alias lsa="ls -lsa"
+
+# Add NeoVim to path
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# Add NeoVim to path
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
