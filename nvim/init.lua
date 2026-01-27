@@ -13,10 +13,12 @@ vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.pack.add({
 	{ src = "https://github.com/vague-theme/vague.nvim" },
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter" },
 })
 
 vim.lsp.enable({'lua_ls','ruff'})
 
+vim.o.termguicolors = true
 vim.cmd("colorscheme vague")
 
 vim.api.nvim_create_user_command(
