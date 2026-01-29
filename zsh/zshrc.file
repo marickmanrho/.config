@@ -33,3 +33,7 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 
 
 . "$HOME/.local/bin/env"
+
+# Add podman to path
+export PATH="$PATH:/usr/local/bin"
+alias podman='podman-remote-static-linux_amd64'
